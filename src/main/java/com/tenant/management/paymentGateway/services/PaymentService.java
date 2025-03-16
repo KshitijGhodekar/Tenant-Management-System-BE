@@ -18,7 +18,8 @@ import java.util.UUID;
 @Service
 public class PaymentService {
 
-    private final String paymentGatewayUrl = "https://api.paymentgateway.com";
+    // Payment service will be linked with Stripe and Razorpay in future
+    private final String paymentGatewayUrl = "https://api.paymentgateway.com";  // Change API with actual payment
 
     @Autowired
     private PaymentRepository paymentRepository;
@@ -33,6 +34,7 @@ public class PaymentService {
         Optional<User> optionalUser = userRepository.findById(request.getUserId());
         Property property = propertyRepository.getById(request.getPropertyId());
 
+        //Add proper User Details who made the payment
         User user = optionalUser.orElseThrow(() -> new IllegalArgumentException("User not found"));
 
         double finalAmount = calculatePaymentAmount(property);
