@@ -1,5 +1,15 @@
 /Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/ManagementApplication.java
 /Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/WebConfig.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/controller/PaymentController.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/entities/Payment.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/repositories/PaymentRepository.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/requestDtos/PaymentRequest.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/requestDtos/PaymentResponse.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/services/PaymentService.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/strategy/NormalPaymentCalculationStrategy.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/strategy/PaymentCalculationStrategy.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/strategy/PlusPaymentCalculationStrategy.java
+/Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/paymentGateway/strategy/PremiumPaymentCalculationStrategy.java
 /Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/propertyHandle/controller/PropertyController.java
 /Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/propertyHandle/entities/Apartment.java
 /Users/kshitijghodekar/Desktop/Tenant Management BackEnd/src/main/java/com/tenant/management/propertyHandle/entities/Condo.java

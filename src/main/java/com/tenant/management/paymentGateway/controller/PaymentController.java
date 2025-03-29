@@ -3,23 +3,27 @@ package com.tenant.management.paymentGateway.controller;
 import com.tenant.management.paymentGateway.requestDtos.PaymentRequest;
 import com.tenant.management.paymentGateway.requestDtos.PaymentResponse;
 import com.tenant.management.paymentGateway.services.PaymentService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.tenant.management.propertyHandle.controller.PropertyController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @RestController
 @RequestMapping("/payments")
 @CrossOrigin(origins = "http://localhost:3000")
 public class PaymentController {
 
-    @Autowired
     private PaymentService paymentService;
 
     @PostMapping("/initiate")
     public ResponseEntity<PaymentResponse> initiatePayment(@RequestBody PaymentRequest request) {
+        Logger logger = LoggerFactory.getLogger(PropertyController.class);
         PaymentResponse response = paymentService.initiatePayment(request);
+        logger.info("AddProperty Response: {}", response);
         return ResponseEntity.ok(response);
     }
 

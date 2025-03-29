@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @RestController
 @RequestMapping("/properties")
 @CrossOrigin(origins = "http://localhost:3000")
@@ -35,7 +39,10 @@ public class PropertyController {
     // Add Property
     @PostMapping("/addPropertyDetails")
     public ResponseEntity<ApiResponse> addProperty(@RequestBody AddPropertyRequest addPropertyRequest) {
+        Logger logger = LoggerFactory.getLogger(PropertyController.class);
         ApiResponse response = propertyService.addProperty(addPropertyRequest);
+        // Log the entire response
+        logger.info("AddProperty Response: {}", response);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 

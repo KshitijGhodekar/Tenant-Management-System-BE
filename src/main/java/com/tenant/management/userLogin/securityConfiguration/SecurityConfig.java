@@ -25,6 +25,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/login").permitAll()
                         .requestMatchers("/properties/**").permitAll()
+                        .requestMatchers("/payments/**").permitAll()
                         .anyRequest().authenticated() // Secure all other endpoints
                 )
                 .addFilterBefore(new JwtFilter(jwtUtil), UsernamePasswordAuthenticationFilter.class); // Add JWT filter
