@@ -1,4 +1,4 @@
-# Note: Wring Repository for Healthcare Dissertation
+# Note: Wrong Repository for Healthcare Dissertation
 
 This repository was mistakenly linked in my dissertation.  
 The **correct repository** for the Healthcare Dissertation Backend is:  
