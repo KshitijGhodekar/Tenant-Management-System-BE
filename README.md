@@ -1,8 +1,8 @@
-# 🚨 Wrong Repository 🚨  
+# 🚨 Wrong Repository (Backend) 🚨
 
-This repository was mistakenly linked in my dissertation.  
+This repository was linked by mistake in my dissertation.
 
-➡️ The **correct backend repository** for the Healthcare Dissertation is:  
-👉 [Dissertation-Healthcare-BE](https://github.com/KshitijGhodekar/Dissertation-Healthcare-BE)  
+➡️ The **correct backend repository** for the Healthcare Dissertation is:
+👉 [Dissertation-Healthcare-BE](https://github.com/KshitijGhodekar/Dissertation-Healthcare-BE)
 
-Please use the above repository for the complete implementation of the backend system described in the dissertation.  
+Please use that repository for the complete **backend** implementation described in the dissertation.
